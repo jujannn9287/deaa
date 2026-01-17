@@ -8,27 +8,14 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Heaven Gambler - Exclusive Casino Bonuses & Wager Races",
+  title: "Heaven Gambler - Official Website",
   description:
-    "Join Heaven Gambler for exclusive casino codes, $500 weekly wager races, and premium community benefits on Upgrader",
-  generator: "v0.app",
+    "Official website of Heaven Gambler - Exclusive casino bonuses, $500 weekly wager races, and premium community benefits",
   icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
+    icon: "/favicon.png",
+    apple: "/favicon.png",
   },
+    generator: 'v0.app'
 }
 
 export default function RootLayout({
