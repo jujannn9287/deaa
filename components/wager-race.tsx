@@ -18,11 +18,11 @@ export default function WagerRace() {
               <span className="text-amber-400 drop-shadow-lg shadow-amber-500/75 animate-glow-pulse font-black">
                 $500
               </span>{" "}
-              Weekly Wager Race
+              Biweekly Wager Race
             </h2>
 
             <p className="text-sm text-gray-300 mb-4">
-              Every week get the chance to claim reward from{" "}
+              Every two weeks get the chance to claim reward from{" "}
               <span className="text-amber-400 font-semibold">$500 prize pool</span>
             </p>
 
@@ -37,7 +37,7 @@ export default function WagerRace() {
               <div className="text-center">
                 <div className="text-emerald-400 text-xs font-semibold mb-0.5 tracking-widest">FREQUENCY</div>
                 <div className="text-lg font-bold text-emerald-400 animate-shimmer drop-shadow-lg shadow-emerald-500/75">
-                  Weekly
+                  Biweekly
                 </div>
               </div>
             </div>

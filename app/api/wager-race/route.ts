@@ -8,7 +8,7 @@ let cacheTimestamp = 0
 const CACHE_DURATION = 5 * 60 * 1000 // 5 minutes in ms
 
 const RACE_START = new Date("2026-01-18T00:00:00.000Z")
-const RACE_END = new Date("2026-01-25T00:00:00.000Z")
+const RACE_END = new Date("2026-02-01T00:00:00.000Z")
 
 function censorUsername(username: string): string {
   if (!username || username.length <= 5) return username

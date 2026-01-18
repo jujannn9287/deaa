@@ -15,8 +15,8 @@ export default function Features() {
     {
       id: "wager",
       icon: "🏆",
-      title: "Weekly Races",
-      description: "$500 weekly wager races with guaranteed prizes for top performers",
+      title: "Biweekly Races",
+      description: "$500 biweekly wager races with guaranteed prizes for top performers",
       link: "/wager-race",
       color: "amber",
     },

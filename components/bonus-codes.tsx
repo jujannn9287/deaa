@@ -16,7 +16,7 @@ const bonusCards: BonusCard[] = [
   {
     name: "Upgrader",
     logo: "/upgrader-logo-small.png",
-    benefits: ["$500 Exclusive Wager Race", "3 Free Cases on Signup", "Daily Rewards & Bonuses", "Exclusive VIP Perks"],
+    benefits: ["$500 Exclusive Biweekly Wager Race", "3 Free Cases on Signup", "Daily Rewards & Bonuses", "Exclusive VIP Perks"],
     link: "https://upgrader.com/r/HEAVEN",
     buttonColor: "from-rose-400 to-rose-500",
     borderColor: "border-rose-400/30",

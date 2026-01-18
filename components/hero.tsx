@@ -60,7 +60,7 @@ export default function Hero() {
               className="group relative px-6 py-3 border-2 border-amber-500 text-white hover:text-white transition font-bold text-sm overflow-hidden"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-amber-500/0 via-amber-500/50 to-amber-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <span className="relative z-10 drop-shadow-[0_0_10px_rgba(251,191,36,0.5)]">$500 WEEKLY WAGER RACE</span>
+              <span className="relative z-10 drop-shadow-[0_0_10px_rgba(251,191,36,0.5)]">$500 BIWEEKLY WAGER RACE</span>
               <div className="absolute inset-0 border border-amber-400 opacity-0 group-hover:opacity-100 transition-opacity shadow-lg shadow-amber-500/50"></div>
             </Link>
 
