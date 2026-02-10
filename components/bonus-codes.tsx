@@ -14,10 +14,10 @@ interface BonusCard {
 
 const bonusCards: BonusCard[] = [
   {
-    name: "Upgrader",
-    logo: "/upgrader-logo-small.png",
-    benefits: ["$500 Exclusive Biweekly Wager Race", "3 Free Cases on Signup", "Daily Rewards & Bonuses", "Exclusive VIP Perks"],
-    link: "https://upgrader.com/r/HEAVEN",
+    name: "Stake",
+    logo: "/stake-logo.png",
+    benefits: ["$500 Monthly Wager Race", "Instant Rakeback Unlock", "Instant VIP Benefits Unlock", "Exclusive Community Access"],
+    link: "https://stake.ac/?offer=heaven2026&c=HEAVEN2026",
     buttonColor: "from-rose-400 to-rose-500",
     borderColor: "border-rose-400/30",
     glowColor: "shadow-rose-400/20",
@@ -85,7 +85,7 @@ export default function BonusCodes() {
                   rel="noopener noreferrer"
                   className={`w-full flex items-center justify-center gap-2 py-3 px-6 rounded-lg bg-gradient-to-r ${card.buttonColor} text-white font-bold hover:opacity-90 transition-all duration-300 shadow-lg`}
                 >
-                  Visit {card.name}
+                  Join {card.name}
                   <ExternalLink className="w-4 h-4" />
                 </a>
               </div>
