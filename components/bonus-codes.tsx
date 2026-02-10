@@ -98,7 +98,7 @@ export default function BonusCodes() {
           <div className="inline-flex items-center gap-3 bg-amber-500/10 border border-amber-500/30 rounded-full px-6 py-3">
             <Gift className="w-5 h-5 text-amber-400" />
             <span className="text-amber-200 font-medium">
-              Use code <span className="text-amber-400 font-bold">HEAVEN</span> for exclusive bonuses
+              Use code <span className="text-amber-400 font-bold">HEAVEN2026</span> for exclusive bonuses
             </span>
           </div>
         </div>
