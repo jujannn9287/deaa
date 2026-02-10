@@ -10,7 +10,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Heaven Gambler - Official Website",
   description:
-    "Official website of Heaven Gambler - Exclusive casino bonuses, $500 biweekly wager races, and premium community benefits",
+    "Official website of Heaven Gambler - Exclusive casino bonuses, $500 monthly wager races, and premium community benefits",
   icons: {
     icon: "/favicon.png",
     apple: "/favicon.png",
