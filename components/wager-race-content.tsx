@@ -24,7 +24,7 @@ interface TimeLeft {
   secs: number
 }
 
-const RACE_END = new Date("2026-02-01T00:00:00.000Z")
+const RACE_END = new Date("2026-03-06T23:59:59.000Z")
 
 export default function WagerRaceContent() {
   const [raceData, setRaceData] = useState<RaceData | null>(null)
@@ -63,7 +63,7 @@ export default function WagerRaceContent() {
 
       setRaceData({
         participants: sorted,
-        raceStart: new Date("2026-01-18T00:00:00.000Z"),
+        raceStart: new Date("2026-02-06T00:00:00.000Z"),
         raceEnd: RACE_END,
         isMockData: result.isMockData || false,
       })
@@ -71,7 +71,7 @@ export default function WagerRaceContent() {
       setApiError(err.message)
       setRaceData({
         participants: [],
-        raceStart: new Date("2026-01-18T00:00:00.000Z"),
+        raceStart: new Date("2026-02-06T00:00:00.000Z"),
         raceEnd: RACE_END,
         isMockData: true,
       })
@@ -123,12 +123,12 @@ export default function WagerRaceContent() {
     return null
   }
 
-  const formatWager = (cents: number) => {
-    return `$${(cents / 100).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
+  const formatWager = (amount: number) => {
+    return `$${amount.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
   }
 
   const getPrizes = (rank: number) => {
-    const prizes = ["$250", "$125", "$75", "$25", "$25"]
+    const prizes = ["$200", "$100", "$75", "$50", "$35", "$10", "$10", "$10", "$10", "$10"]
     return prizes[rank - 1] || "$0"
   }
 
@@ -139,14 +139,14 @@ export default function WagerRaceContent() {
           <p className="text-amber-200/80 text-lg flex items-center justify-center gap-2 flex-wrap">
             Sign up on{" "}
             <Link
-              href="https://upgrader.com/r/HEAVEN"
+              href="https://stake.ac/?offer=heaven2026&c=HEAVEN2026"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block"
             >
               <Image
-                src="/upgrader-logo-small.png"
-                alt="Upgrader"
+                src="/stake-logo.png"
+                alt="Stake"
                 width={80}
                 height={32}
                 className="h-6 w-auto inline-block align-middle transition-transform duration-200 hover:scale-110 cursor-pointer"
@@ -258,7 +258,7 @@ export default function WagerRaceContent() {
 
             <div className="mt-12">
               <h2 className="text-2xl font-bold text-white mb-1">Other Standings</h2>
-              <p className="text-gray-400 text-sm mb-4">Prize distributed among top 5 players</p>
+              <p className="text-gray-400 text-sm mb-4">Prize distributed among top 10 players</p>
 
               <div className="overflow-x-auto">
                 <table className="w-full">
@@ -271,7 +271,7 @@ export default function WagerRaceContent() {
                     </tr>
                   </thead>
                   <tbody>
-                    {[4, 5].map((rank) => {
+                    {[4, 5, 6, 7, 8, 9, 10].map((rank) => {
                       const participant = otherRankingsParticipant(rank - 1)
                       return (
                         <tr
