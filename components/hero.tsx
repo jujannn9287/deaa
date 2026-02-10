@@ -25,7 +25,7 @@ export default function Hero() {
           <span className="text-white text-xl md:text-2xl font-light">×</span>
 
           <div className="flex-shrink-0 relative">
-            <Image src="/upgrader-logo.png" alt="Upgrader" width={100} height={40} className="h-10 w-auto" />
+            <Image src="/stake-logo.png" alt="Stake" width={100} height={40} className="h-10 w-auto" />
             <div className="absolute -inset-2 bg-gradient-to-r from-pink-500/20 to-amber-500/20 rounded-lg blur-lg opacity-0 group-hover:opacity-100 transition-all"></div>
           </div>
         </div>
@@ -44,13 +44,13 @@ export default function Hero() {
 
         <div className="flex flex-col items-center gap-4">
           <Link
-            href="https://upgrader.com/r/HEAVEN"
+            href="https://stake.ac/?offer=heaven2026&c=HEAVEN2026"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative px-8 py-3 border-2 border-pink-500 text-white hover:text-white transition font-bold text-base overflow-hidden"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-pink-500/0 via-pink-500/50 to-pink-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-shimmer"></div>
-            <span className="relative z-10 flex items-center justify-center gap-2">✦ JOIN UPGRADER.COM ✦</span>
+            <span className="relative z-10 flex items-center justify-center gap-2">✦ JOIN STAKE.AC ✦</span>
             <div className="absolute inset-0 border border-pink-400 opacity-0 group-hover:opacity-100 transition-opacity shadow-lg shadow-pink-500/50"></div>
           </Link>
 
@@ -60,7 +60,7 @@ export default function Hero() {
               className="group relative px-6 py-3 border-2 border-amber-500 text-white hover:text-white transition font-bold text-sm overflow-hidden"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-amber-500/0 via-amber-500/50 to-amber-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <span className="relative z-10 drop-shadow-[0_0_10px_rgba(251,191,36,0.5)]">$500 BIWEEKLY WAGER RACE</span>
+              <span className="relative z-10 drop-shadow-[0_0_10px_rgba(251,191,36,0.5)]">$500 MONTHLY WAGER RACE</span>
               <div className="absolute inset-0 border border-amber-400 opacity-0 group-hover:opacity-100 transition-opacity shadow-lg shadow-amber-500/50"></div>
             </Link>
 
