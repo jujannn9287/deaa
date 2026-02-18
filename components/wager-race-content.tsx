@@ -312,32 +312,7 @@ export default function WagerRaceContent() {
             </div>
           </div>
         </div>
-
-        {/* Important Rules */}
-        <div className="mt-8 bg-gradient-to-r from-red-900/40 to-orange-900/40 border border-red-500/50 rounded-lg p-4 backdrop-blur-sm">
-          <h3 className="text-base font-bold text-red-400 mb-3">Important Rules</h3>
-          <div className="space-y-2">
-            <div className="flex items-start gap-2 bg-red-950/30 rounded p-2 border border-red-500/30">
-              <span className="text-red-400 font-bold text-sm">🥇</span>
-              <div>
-                <p className="text-red-300 font-semibold text-sm">1st Place: $20,000 USD minimum</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-2 bg-orange-950/30 rounded p-2 border border-orange-500/30">
-              <span className="text-orange-400 font-bold text-sm">🥈</span>
-              <div>
-                <p className="text-orange-300 font-semibold text-sm">2nd Place: $15,000 USD minimum</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-2 bg-yellow-950/30 rounded p-2 border border-yellow-500/30">
-              <span className="text-yellow-400 font-bold text-sm">🥉</span>
-              <div>
-                <p className="text-yellow-300 font-semibold text-sm">3rd Place: $10,000 USD minimum</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+  
     </main>
   )
 }
