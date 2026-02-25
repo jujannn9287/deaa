@@ -315,4 +315,5 @@ export default function WagerRaceContent() {
         </div>
 
     </main>
+      )
 }
