@@ -8,7 +8,7 @@ export function getCurrentRaceSchedule() {
   const currentYear = now.getUTCFullYear()
   const currentMonth = now.getUTCMonth()
 
-  // IST is UTC+5:30
+  // IST is UTC+5:30///
   const istOffset = 5.5 * 60 * 60 * 1000
 
   // Get the current month's race start (1st at 00:00 IST)
