@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server"
+import { getCurrentRaceSchedule } from "@/lib/race-schedule"
 
 const GOOGLE_API_KEY = "AIzaSyASKBWy1uF01IFrBcXnsnWfEb3dWu0MYwE"
 const SPREADSHEET_ID = "1xNmNKenHVjTVGQNHHdEP0-ZRXvYlkQLg3IxWfWXK2z8"
@@ -8,9 +9,6 @@ const SHEET_RANGE = "A1:G1000"
 let cachedData: any = null
 let cacheTimestamp = 0
 const CACHE_DURATION = 5 * 60 * 1000 // 5 minutes in ms
-
-const RACE_START = new Date("2026-02-06T00:00:00.000Z")
-const RACE_END = new Date("2026-03-06T23:59:59.000Z")
 
 function censorUsername(username: string): string {
   if (!username || username.length <= 5) return username
@@ -93,12 +91,14 @@ export async function POST(request: Request) {
 
     console.log("[v0] Total participants from Sheets:", participants.length)
 
+    const schedule = getCurrentRaceSchedule()
+
     const responseData = {
       error: false,
       isMockData: false,
       summarizedBets: participants,
-      raceStart: RACE_START.toISOString(),
-      raceEnd: RACE_END.toISOString(),
+      raceStart: schedule.raceStart.toISOString(),
+      raceEnd: schedule.raceEnd.toISOString(),
     }
 
     cachedData = responseData
@@ -108,13 +108,15 @@ export async function POST(request: Request) {
   } catch (err: any) {
     console.log("[v0] API Error:", err.message)
 
+    const schedule = getCurrentRaceSchedule()
+
     const errorResponse = {
       error: false,
       isMockData: true,
       msg: `API Error: ${err.message}`,
       summarizedBets: [],
-      raceStart: RACE_START.toISOString(),
-      raceEnd: RACE_END.toISOString(),
+      raceStart: schedule.raceStart.toISOString(),
+      raceEnd: schedule.raceEnd.toISOString(),
     }
 
     return NextResponse.json(errorResponse)
