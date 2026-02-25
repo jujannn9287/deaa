@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
+import { getCurrentRaceSchedule } from "@/lib/race-schedule"
 
 interface RaceParticipant {
   username: string
@@ -24,13 +25,13 @@ interface TimeLeft {
   secs: number
 }
 
-const RACE_END = new Date("2026-03-06T23:59:59.000Z")
-
 export default function WagerRaceContent() {
   const [raceData, setRaceData] = useState<RaceData | null>(null)
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({ days: 0, hours: 0, mins: 0, secs: 0 })
   const [loading, setLoading] = useState(true)
   const [apiError, setApiError] = useState<string>("")
+  const schedule = getCurrentRaceSchedule()
+  const RACE_END = schedule.raceEnd
 
   const fetchRaceData = async () => {
     try {
@@ -63,16 +64,16 @@ export default function WagerRaceContent() {
 
       setRaceData({
         participants: sorted,
-        raceStart: new Date("2026-02-06T00:00:00.000Z"),
-        raceEnd: RACE_END,
+        raceStart: new Date(result.raceStart),
+        raceEnd: new Date(result.raceEnd),
         isMockData: result.isMockData || false,
       })
     } catch (err: any) {
       setApiError(err.message)
       setRaceData({
         participants: [],
-        raceStart: new Date("2026-02-06T00:00:00.000Z"),
-        raceEnd: RACE_END,
+        raceStart: schedule.raceStart,
+        raceEnd: schedule.raceEnd,
         isMockData: true,
       })
     } finally {
@@ -312,7 +313,7 @@ export default function WagerRaceContent() {
             </div>
           </div>
         </div>
-  
+
     </main>
-  )
+  every 5th  )
 }
