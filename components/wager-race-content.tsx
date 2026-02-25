@@ -315,5 +315,4 @@ export default function WagerRaceContent() {
         </div>
 
     </main>
-  every 5th  )
 }
