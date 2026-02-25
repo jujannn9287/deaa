@@ -313,7 +313,7 @@ export default function WagerRaceContent() {
             </div>
           </div>
         </div>
-
+      </div>
     </main>
       )
 }
