@@ -16,9 +16,12 @@ export default function Footer() {
             </a>
           </p>
 
+          <div className="mt-6 text-center">
           <p className="text-gray-500 text-xs">
-            Made with <span className="text-red-500">❤</span> by superwotec
+            Made with <span className="text-red-500">❤️</span> by{' '}
+            <a href="http://superwotec.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-gray-300 font-medium hover:text-red-600 transition-colors">superwotec</a>
           </p>
+        </div>
         </div>
       </div>
     </footer>
